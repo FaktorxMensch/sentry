@@ -1,0 +1,17 @@
+.progressBar {
+  height: 8px;
+  width: 100%;
+  background-color: var(--background);
+  border-radius: var(--border-radius-default);
+}
+
+.progressBar-bar {
+  height: 100%;
+  background-color: var(--primary2);
+  border-radius: inherit;
+  text-align: right;
+}
+
+.progressBar-bar-progress {
+  color: var(--onSurface2);
+}

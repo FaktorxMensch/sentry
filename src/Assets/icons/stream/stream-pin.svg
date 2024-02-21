@@ -1,0 +1,33 @@
+var _path, _path2;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgStreamPin(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 32,
+    height: 38,
+    viewBox: "0 0 32 38",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    opacity: 0.7,
+    d: "M21.3337 32H10.667L16.0013 37.3333L21.3337 32Z",
+    fill: "current"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    opacity: 0.9,
+    d: "M0 9.6C0 6.23969 0 4.55953 0.653961 3.27606C1.2292 2.14708 2.14708 1.2292 3.27606 0.653961C4.55953 0 6.23969 0 9.6 0H22.4C25.7603 0 27.4405 0 28.7239 0.653961C29.8529 1.2292 30.7708 2.14708 31.346 3.27606C32 4.55953 32 6.23969 32 9.6V22.4C32 25.7603 32 27.4405 31.346 28.7239C30.7708 29.8529 29.8529 30.7708 28.7239 31.346C27.4405 32 25.7603 32 22.4 32H9.6C6.23969 32 4.55953 32 3.27606 31.346C2.14708 30.7708 1.2292 29.8529 0.653961 28.7239C0 27.4405 0 25.7603 0 22.4V9.6Z",
+    fill: "current"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgStreamPin);
+export default __webpack_public_path__ + "static/media/stream-pin.ec86206ff1c77d0013bd7070b9f01d69.svg";
+export { ForwardRef as ReactComponent };

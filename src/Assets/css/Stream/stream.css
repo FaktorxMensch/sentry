@@ -1,0 +1,11 @@
+.stream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

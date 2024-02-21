@@ -1,0 +1,72 @@
+.menuButton {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 20px 0px;
+  gap: 16px;
+  color: var(--onSurface2);
+  width: 100%;
+}
+
+.menuModes-modes .menuButton:first-of-type {
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0px 0px;
+}
+
+.menuButton svg {
+  width: 24px;
+  height: 24px;
+}
+
+.menuButton svg path {
+  fill: var(--primary);
+}
+
+.menuButton p {
+  margin: 0;
+  padding-right: 8px;
+  font-size: var(--font-size-s);
+}
+
+.menuButton.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.menuButton.active svg path {
+  fill: var(--white);
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (orientation: portrait) {
+  .menuButton {
+    flex-direction: row;
+    height: 100%;
+    padding: 0px 20px;
+    width: fit-content;
+  }
+
+  .menuModes-modes .menuButton:first-of-type {
+    border-radius: var(--border-radius-small) 0px 0px var(--border-radius-small);
+  }
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (min-height: 1100px) and (orientation: portrait) {
+  .menuButton {
+    min-width: 80px;
+  }
+
+  .menuModes-modes .menuButton:first-of-type {
+    border-radius: var(--border-radius-default) 0px 0px
+      var(--border-radius-default);
+  }
+
+  .menuButton svg {
+    width: 32px;
+    height: 32px;
+  }
+}

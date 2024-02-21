@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgArrowNorthwest(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.75756 6.85742C7.51886 6.85742 7.28994 6.95224 7.12116 7.12103C7.08944 7.15274 7.06034 7.18658 7.03399 7.22221C6.91304 7.38515 6.85423 7.57969 6.85756 7.77335L6.85756 14.8285C6.85756 15.3255 7.2605 15.7285 7.75756 15.7285C8.25461 15.7285 8.65756 15.3255 8.65756 14.8285L8.65756 9.93073L15.6063 16.8795C15.9578 17.2309 16.5276 17.2309 16.8791 16.8795C17.2306 16.528 17.2306 15.9582 16.8791 15.6067L9.92984 8.65742L14.8286 8.65742C15.3257 8.65742 15.7286 8.25448 15.7286 7.75742C15.7286 7.26037 15.3257 6.85742 14.8286 6.85742H7.75756Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgArrowNorthwest);
+export default __webpack_public_path__ + "static/media/arrow-northwest.5898f9b3b809ba0061aee337fc6d19b2.svg";
+export { ForwardRef as ReactComponent };

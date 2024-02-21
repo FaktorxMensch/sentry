@@ -1,0 +1,141 @@
+.smallView {
+  position: relative;
+  overflow: hidden;
+  grid-column: 7 / span 3;
+  grid-row: 1 / span 8;
+  border-radius: var(--border-radius-default);
+  background-color: var(--surface1);
+  display: none;
+}
+
+.smallView.fullscreen {
+  display: block;
+}
+
+@media only screen and (orientation: portrait) {
+  .smallView.fullscreen {
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withControlsMenu {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withTargetList {
+    grid-column: 2 / span 8;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withSettingsMenu {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 11;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .smallView.fullscreen {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 12;
+  }
+
+  .smallView.fullscreen.withControlsMenu {
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 12;
+  }
+
+  .smallView.fullscreen.withTargetList {
+    grid-column: 2 / span 7;
+    grid-row: 1 / span 12;
+  }
+
+  .smallView.fullscreen.withSettingsMenu {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 12;
+  }
+}
+/*it's a secondary panel so only appears on the large breakpoint*/
+/*large landscape breakpoint*/
+@media only screen and (min-width: 1100px) and (orientation: landscape) {
+  .smallView {
+    display: block;
+  }
+
+  .smallView.hideBoatbus {
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.withControlsMenu {
+    grid-column: 6 / span 3;
+  }
+
+  .smallView.withSettingsMenu {
+    grid-column: 4 / span 3;
+  }
+
+  .smallView.fullscreen {
+    grid-column: 1 / 10;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withTargetList {
+    grid-column: 2 / 10;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withControlsMenu {
+    grid-column: 1 / 9;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withSettingsMenu {
+    grid-column: 1 / 7;
+    grid-row: 1 / span 11;
+  }
+}
+
+/*large portrait breakpoint*/
+@media only screen and (min-height: 1100px) and (orientation: portrait) {
+  .smallView {
+    display: block;
+    grid-column: 1 / span 6;
+    grid-row: 8 / span 4;
+  }
+
+  .smallView.hideBoatbus {
+    grid-column: 1 / span 9;
+    grid-row: 8 / span 4;
+  }
+
+  .smallView.withTargetList {
+    grid-column: 2 / span 5;
+  }
+
+  .smallView.withTargetList.hideBoatbus {
+    grid-column: 2 / span 8;
+    grid-row: 8 / span 4;
+  }
+
+  .smallView.withControlsMenu {
+    grid-column: 1 / span 5;
+  }
+
+  .smallView.withSettingsMenu {
+    grid-column: 1 / span 3;
+  }
+
+  .smallView.fullscreen {
+    display: block;
+    grid-column: 1 / 10;
+    grid-row: 1 / span 11;
+  }
+
+  .smallView.fullscreen.withTargetList {
+    grid-column: 2 / span 8;
+  }
+  .smallView.fullscreen.withControlsMenu {
+    grid-column: 1 / span 8;
+  }
+}

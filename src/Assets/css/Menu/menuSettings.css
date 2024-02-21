@@ -1,0 +1,39 @@
+.menuSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--overlay1);
+}
+
+.menuSettings,
+.menuSettings :last-child {
+  border-radius: 0px 0px var(--border-radius-small) var(--border-radius-small);
+}
+
+@media only screen and (orientation: portrait) {
+  .menuSettings {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .menuSettings,
+  .menuSettings :last-child {
+    border-radius: 0px var(--border-radius-small) var(--border-radius-small) 0px;
+  }
+}
+
+/*large landscape and small medium and large portrait breakpoints with horizontal menu on the bottom*/
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (min-height: 1100px) and (orientation: portrait) {
+  .menuSettings {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .menuSettings,
+  .menuSettings :last-child {
+    border-radius: 0px var(--border-radius-default) var(--border-radius-default)
+      0px;
+  }
+}

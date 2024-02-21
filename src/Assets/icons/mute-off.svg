@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgMuteOff(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M18.294 5.36331C17.9425 5.01178 17.3727 5.0117 17.0212 5.36312C16.6696 5.71454 16.6696 6.28438 17.021 6.63591C18.3522 7.96751 19.1 9.77331 19.1 11.6562C19.1 13.5391 18.3522 15.3449 17.021 16.6765C16.6696 17.028 16.6696 17.5979 17.0212 17.9493C17.3727 18.3007 17.9425 18.3006 18.294 17.9491C19.9626 16.2799 20.9 14.0164 20.9 11.6562C20.9 9.29602 19.9626 7.03246 18.294 5.36331ZM15.4697 8.18761C15.1182 7.83608 14.5484 7.83599 14.1969 8.18741C13.8453 8.53883 13.8453 9.10868 14.1967 9.46021C14.7779 10.0416 15.1044 10.8301 15.1044 11.6522C15.1044 12.4743 14.7779 13.2628 14.1967 13.8442C13.8453 14.1957 13.8453 14.7656 14.1969 15.117C14.5484 15.4684 15.1182 15.4683 15.4697 15.1168C16.3883 14.1978 16.9044 12.9516 16.9044 11.6522C16.9044 10.3528 16.3883 9.10657 15.4697 8.18761ZM10.2566 6.99961C10.2566 6.63892 10.0412 6.31308 9.70942 6.17167C9.37761 6.03025 8.99342 6.10059 8.73324 6.35039L6.01857 8.95675H3.99998C3.50292 8.95675 3.09998 9.3597 3.09998 9.85675V14.1425C3.09998 14.6395 3.50292 15.0425 3.99998 15.0425H6.01857L8.73324 17.6488C8.99342 17.8986 9.37761 17.969 9.70942 17.8276C10.0412 17.6861 10.2566 17.3603 10.2566 16.9996V6.99961ZM7.00399 10.506L8.45656 9.11136V14.8879L7.00399 13.4933C6.83638 13.3323 6.61303 13.2425 6.38068 13.2425H4.89998V10.7568H6.38068C6.61303 10.7568 6.83638 10.6669 7.00399 10.506Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgMuteOff);
+export default __webpack_public_path__ + "static/media/mute-off.ba2f379a257a97aebf6bf0172bdfd139.svg";
+export { ForwardRef as ReactComponent };

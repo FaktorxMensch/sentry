@@ -1,0 +1,156 @@
+[data-theme="DARK"] {
+  --primary: var(--color-dark-mode-accent);
+  --primary2: var(--color-dark-mode-accent-2);
+  --warning: var(--color-dark-mode-warning);
+  --danger: var(--color-dark-mode-danger);
+  --success: var(--color-dark-mode-success);
+
+  --background: var(--color-dark-mode-background);
+  --onBG1: var(--color-dark-mode-on-background-1);
+  --onBG2: var(--color-dark-mode-on-background-2);
+  --onBG3: var(--color-dark-mode-on-background-3);
+
+  --surface1: var(--color-dark-mode-surface-1);
+  --surface2: var(--color-dark-mode-surface-2);
+  --surface3: var(--color-dark-mode-surface-3);
+
+  --onSurface1: var(--color-dark-mode-on-surface-1);
+  --onSurface2: var(--color-dark-mode-on-surface-2);
+  --onSurface3: var(--color-dark-mode-on-surface-3);
+
+  --overLight1: var(--color-dark-mode-overlight-1);
+  --overLight2: var(--color-dark-mode-overlight-2);
+  --overLight3: var(--color-dark-mode-overlight-3);
+  --overLight4: var(--color-dark-mode-overlight-4);
+  --overLight5: var(--color-dark-mode-overlight-5);
+
+  --overlay1: var(--color-dark-mode-overlay-1);
+  --overlay2: var(--color-dark-mode-overlay-2);
+  --overlay3: var(--color-dark-mode-overlay-3);
+  --overlay4: var(--color-dark-mode-overlay-4);
+  --overlay5: var(--color-dark-mode-overlay-5);
+
+  --white: var(--color-dark-mode-white);
+}
+
+:root {
+  --primary: var(--color-low-light-mode-accent);
+  --primary2: var(--color-low-light-mode-accent-2);
+  --warning: var(--color-low-light-mode-warning);
+  --danger: var(--color-low-light-mode-danger);
+  --success: var(--color-low-light-mode-success);
+
+  --background: var(--color-low-light-mode-background);
+  --onBG1: var(--color-low-light-mode-on-background-1);
+  --onBG2: var(--color-low-light-mode-on-background-2);
+  --onBG3: var(--color-low-light-mode-on-background-3);
+
+  --surface1: var(--color-low-light-mode-surface-1);
+  --surface2: var(--color-low-light-mode-surface-2);
+  --surface3: var(--color-low-light-mode-surface-3);
+
+  --onSurface1: var(--color-low-light-mode-on-surface-1);
+  --onSurface2: var(--color-low-light-mode-on-surface-2);
+  --onSurface3: var(--color-low-light-mode-on-surface-3);
+
+  --overLight1: var(--color-low-light-mode-overlight-1);
+  --overLight2: var(--color-low-light-mode-overlight-2);
+  --overLight3: var(--color-low-light-mode-overlight-3);
+  --overLight4: var(--color-low-light-mode-overlight-4);
+  --overLight5: var(--color-low-light-mode-overlight-5);
+
+  --overlay1: var(--color-low-light-mode-overlay-1);
+  --overlay2: var(--color-low-light-mode-overlay-2);
+  --overlay3: var(--color-low-light-mode-overlay-3);
+  --overlay4: var(--color-low-light-mode-overlay-4);
+  --overlay5: var(--color-low-light-mode-overlay-5);
+
+  /*foundation colors*/
+  --white: var(--color-low-light-mode-white);
+  --black: var(--color-black);
+  /* primary */
+  --primary900: var(--color-foundation-primary-900);
+  --primary800: var(--color-foundation-primary-800);
+  --primary700: var(--color-foundation-primary-700);
+  --primary600: var(--color-foundation-primary-600);
+  --primary500: var(--color-foundation-primary-500);
+  --primary400: var(--color-foundation-primary-400);
+  --primary300: var(--color-foundation-primary-300);
+  --primary200: var(--color-foundation-primary-200);
+  --primary100: var(--color-foundation-primary-100);
+
+  /* success */
+  --success900: var(--color-foundation-success-900);
+  --success800: var(--color-foundation-success-800);
+  --success700: var(--color-foundation-success-700);
+  --success600: var(--color-foundation-success-600);
+  --success500: var(--color-foundation-success-500);
+  --success400: var(--color-foundation-success-400);
+  --success300: var(--color-foundation-success-300);
+  --success200: var(--color-foundation-success-200);
+  --success100: var(--color-foundation-success-100);
+
+  /* danger */
+  --danger900: var(--color-foundation-danger-900);
+  --danger800: var(--color-foundation-danger-800);
+  --danger700: var(--color-foundation-danger-700);
+  --danger600: var(--color-foundation-danger-600);
+  --danger500: var(--color-foundation-danger-500);
+  --danger400: var(--color-foundation-danger-400);
+  --danger300: var(--color-foundation-danger-300);
+  --danger200: var(--color-foundation-danger-200);
+  --danger100: var(--color-foundation-danger-100);
+
+  /* warning */
+  --warning900: var(--color-foundation-warning-900);
+  --warning800: var(--color-foundation-warning-800);
+  --warning700: var(--color-foundation-warning-700);
+  --warning600: var(--color-foundation-warning-600);
+  --warning500: var(--color-foundation-warning-500);
+  --warning400: var(--color-foundation-warning-400);
+  --warning300: var(--color-foundation-warning-300);
+  --warning200: var(--color-foundation-warning-200);
+  --warning100: var(--color-foundation-warning-100);
+
+  /* terrain */
+  --terrain900: var(--color-foundation-terrain-900);
+  --terrain800: var(--color-foundation-terrain-800);
+  --terrain700: var(--color-foundation-terrain-700);
+  --terrain600: var(--color-foundation-terrain-600);
+  --terrain500: var(--color-foundation-terrain-500);
+  --terrain400: var(--color-foundation-terrain-400);
+  --terrain300: var(--color-foundation-terrain-300);
+  --terrain200: var(--color-foundation-terrain-200);
+  --terrain100: var(--color-foundation-terrain-100);
+
+  /* neutrals */
+  --neutral900: var(--color-foundation-neutrals-900);
+  --neutral800: var(--color-foundation-neutrals-800);
+  --neutral700: var(--color-foundation-neutrals-700);
+  --neutral600: var(--color-foundation-neutrals-600);
+  --neutral500: var(--color-foundation-neutrals-500);
+  --neutral400: var(--color-foundation-neutrals-400);
+  --neutral300: var(--color-foundation-neutrals-300);
+  --neutral200: var(--color-foundation-neutrals-200);
+  --neutral100: var(--color-foundation-neutrals-100);
+
+  /* dark neutrals */
+  --neutrals-dark980: var(--color-foundation-neutrals-dark-980);
+  --neutrals-dark960: var(--color-foundation-neutrals-dark-960);
+  --neutrals-dark940: var(--color-foundation-neutrals-dark-940);
+  --neutrals-dark920: var(--color-foundation-neutrals-dark-920);
+  --neutrals-dark880: var(--color-foundation-neutrals-dark-880);
+  --neutrals-dark860: var(--color-foundation-neutrals-dark-860);
+  --neutrals-dark840: var(--color-foundation-neutrals-dark-840);
+  --neutrals-dark820: var(--color-foundation-neutrals-dark-820);
+
+  /* light neutrals */
+  --neutrals-light180: var(--color-foundation-neutrals-light-180);
+  --neutrals-light160: var(--color-foundation-neutrals-light-160);
+  --neutrals-light140: var(--color-foundation-neutrals-light-140);
+  --neutrals-light120: var(--color-foundation-neutrals-light-120);
+  --neutrals-light80: var(--color-foundation-neutrals-light-80);
+  --neutrals-light60: var(--color-foundation-neutrals-light-60);
+  --neutrals-light40: var(--color-foundation-neutrals-light-40);
+  --neutrals-light20: var(--color-foundation-neutrals-light-20);
+}

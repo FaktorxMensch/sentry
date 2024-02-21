@@ -1,0 +1,3 @@
+.streamTargetFar svg:nth-child(2) path {
+  fill: var(--white);
+}

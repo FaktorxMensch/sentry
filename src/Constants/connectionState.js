@@ -1,0 +1,10 @@
+export const SUCCESS = "SUCCESS";
+export const LOADING = "LOADING";
+export const BUSY = "CONNECTION_BUSY";
+export const LOST = "LOST";
+export const CLOSED = "CLOSED";
+export const REQUEST_TIMEDOUT = "REQUEST_TIMEDOUT";
+export const WORKER_NOT_AVAILABLE = "WORKER_NOT_AVAILABLE";
+export const SOCKET_ALREADY_OPEN = "SOCKET_ALREADY_OPEN";
+export const UNKNOWN_PEER_ID = "UNKNOWN_PEER_ID";
+export const WAITING_CONNECTION = "WAITING_CONNECTION";

@@ -1,0 +1,17 @@
+.targetListImage {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: var(--border-radius-small);
+}
+
+.targetListImage img {
+  width: 100%;
+}
+
+/*.targetListImage-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/

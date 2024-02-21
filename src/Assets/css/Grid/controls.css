@@ -1,0 +1,46 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  grid-column: 8;
+  grid-row: 1 / span 12;
+  border-radius: var(--border-radius-default);
+  background-color: var(--surface1);
+}
+
+/*small portrait breakpoint*/
+@media only screen and (orientation: portrait) {
+  .controls {
+    grid-column: 5 / span 5;
+    grid-row: 1 / span 11;
+  }
+}
+
+/*medium portrait breakpoint*/
+@media only screen and (min-width: 600px) and (orientation: portrait) {
+  .controls {
+    grid-column: 9;
+  }
+}
+
+/*large landscape breakpoint*/
+@media only screen and (min-width: 1100px) and (orientation: landscape) {
+  .controls {
+    grid-column: 9;
+    grid-row: 1 / span 11;
+  }
+}
+
+/*large portrait breakpoint*/
+@media only screen and (min-height: 1100px) and (orientation: portrait) {
+  .controls {
+    grid-column: 9;
+    grid-row: 1 / span 11;
+  }
+
+  .controls.fullscreen {
+    grid-column: 9;
+    grid-row: 1 / span 11;
+  }
+}

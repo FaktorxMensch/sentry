@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgDay(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.9998 1.82031C12.4968 1.82031 12.8998 2.22326 12.8998 2.72031V4.40738C12.8998 4.90443 12.4968 5.30737 11.9998 5.30737C11.5027 5.30737 11.0998 4.90443 11.0998 4.40738V2.72031C11.0998 2.22326 11.5027 1.82031 11.9998 1.82031ZM12 8.68131C10.1677 8.68131 8.6823 10.1667 8.6823 11.999C8.6823 13.8313 10.1677 15.3166 12 15.3166C13.8322 15.3166 15.3176 13.8313 15.3176 11.999C15.3176 10.1667 13.8322 8.68131 12 8.68131ZM6.8823 11.999C6.8823 9.17257 9.17356 6.88131 12 6.88131C14.8264 6.88131 17.1176 9.17257 17.1176 11.999C17.1176 14.8254 14.8264 17.1166 12 17.1166C9.17356 17.1166 6.8823 14.8254 6.8823 11.999ZM12.8998 19.5907C12.8998 19.0936 12.4968 18.6907 11.9998 18.6907C11.5027 18.6907 11.0998 19.0936 11.0998 19.5907V21.2777C11.0998 21.7748 11.5027 22.1777 11.9998 22.1777C12.4968 22.1777 12.8998 21.7748 12.8998 21.2777V19.5907ZM4.80096 4.80051C5.15243 4.44904 5.72228 4.44904 6.07375 4.80051L7.27157 5.99833C7.62304 6.3498 7.62304 6.91965 7.27157 7.27112C6.9201 7.62259 6.35025 7.62259 5.99878 7.27112L4.80096 6.07331C4.44949 5.72184 4.44949 5.15199 4.80096 4.80051ZM18.0009 16.7271C17.6494 16.3756 17.0795 16.3756 16.7281 16.7271C16.3766 17.0785 16.3766 17.6484 16.7281 17.9999L17.9259 19.1977C18.2773 19.5491 18.8472 19.5491 19.1987 19.1977C19.5501 18.8462 19.5501 18.2764 19.1987 17.9249L18.0009 16.7271ZM1.82117 11.9992C1.82117 11.5021 2.22411 11.0992 2.72117 11.0992H4.40823C4.90529 11.0992 5.30823 11.5021 5.30823 11.9992C5.30823 12.4962 4.90529 12.8992 4.40823 12.8992H2.72117C2.22411 12.8992 1.82117 12.4962 1.82117 11.9992ZM19.5913 11.0992C19.0942 11.0992 18.6913 11.5021 18.6913 11.9992C18.6913 12.4962 19.0942 12.8992 19.5913 12.8992H21.2783C21.7754 12.8992 22.1783 12.4962 22.1783 11.9992C22.1783 11.5021 21.7754 11.0992 21.2783 11.0992H19.5913ZM7.27157 16.7271C7.62304 17.0785 7.62304 17.6484 7.27157 17.9999L6.07375 19.1977C5.72228 19.5491 5.15243 19.5491 4.80096 19.1977C4.44949 18.8462 4.44949 18.2764 4.80096 17.9249L5.99878 16.7271C6.35025 16.3756 6.9201 16.3756 7.27157 16.7271ZM19.1987 6.07331C19.5501 5.72184 19.5501 5.15199 19.1987 4.80051C18.8472 4.44904 18.2773 4.44904 17.9259 4.80051L16.7281 5.99833C16.3766 6.3498 16.3766 6.91965 16.7281 7.27112C17.0795 7.62259 17.6494 7.62259 18.0009 7.27112L19.1987 6.07331Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgDay);
+export default __webpack_public_path__ + "static/media/day.5e2536b6dc716ecdb5c817e2f83d09ae.svg";
+export { ForwardRef as ReactComponent };

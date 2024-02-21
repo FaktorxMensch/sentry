@@ -1,0 +1,16 @@
+.panTiltPanel {
+  position: absolute;
+  bottom: 39px;
+  display: grid;
+  padding: 24px;
+  grid-template-columns: repeat(5, 40px);
+  grid-template-rows: repeat(3, 40px);
+  gap: 16px;
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0px 0px;
+  background: var(--surface2);
+}
+
+.panTiltPanel.withMap {
+  grid-template-columns: repeat(5, 40px);
+  grid-template-rows: repeat(1, 40px);
+}

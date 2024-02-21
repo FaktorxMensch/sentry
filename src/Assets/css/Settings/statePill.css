@@ -1,0 +1,26 @@
+.statePill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-default);
+  padding: 0px 16px 0px 12px;
+  width: fit-content;
+  height: 32px;
+  gap: 8px;
+}
+
+.statePill.RED {
+  background-color: var(--danger);
+}
+
+.statePill.YELLOW {
+  background-color: var(--warning);
+}
+
+.statePill.GREEN {
+  background-color: var(--success);
+}
+
+.statePill > p {
+  color: var(--white);
+}

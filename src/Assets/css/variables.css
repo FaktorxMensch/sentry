@@ -1,0 +1,18 @@
+:root {
+  touch-action: pan-x pan-y;
+
+  --border-radius-default: 16px;
+  --border-radius-viewButton: 13px;
+  --border-radius-small: 8px;
+
+  --spacing-default: 16px;
+  --spacing-large: 24px;
+
+  --font-size-xxxl: 128px;
+  --font-size-xxl: 64px;
+  --font-size-xl: 24px;
+  --font-size-l: 20px;
+  --font-size-m: 18px;
+  --font-size-s: 16px;
+  --font-size-xs: 14px;
+}

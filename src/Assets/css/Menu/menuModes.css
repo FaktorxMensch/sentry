@@ -1,0 +1,42 @@
+.menuModes {
+  border-radius: var(--border-radius-default) var(--border-radius-default) 0px
+    0px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menuModes div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (orientation: portrait) {
+  .menuModes {
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .menuModes,
+  .menuModes div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (min-height: 1100px) and (orientation: portrait) {
+  .menuModes {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape) {
+  .menuModes,
+  .menuModes div {
+    display: flex;
+    flex-direction: row;
+  }
+}

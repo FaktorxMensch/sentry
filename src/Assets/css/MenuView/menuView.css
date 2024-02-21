@@ -1,0 +1,42 @@
+.menuView-top {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuView-top .menuView-groupHorizontal,
+.menuView-bottom .menuView-groupHorizontal {
+  display: flex;
+  flex-direction: row;
+  border-radius: var(--border-radius-small);
+}
+
+.menuView-top .menuView-dualViewFullScreen {
+  display: none;
+}
+
+.menuView-bottom {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menuView-bottom .menuView-groupVertical {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-small);
+}
+
+@media only screen and (min-width: 1100px),
+  only screen and (min-height: 1100px) {
+  .menuView-top .menuView-dualViewFullScreen {
+    display: flex;
+  }
+}

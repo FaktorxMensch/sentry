@@ -1,0 +1,11 @@
+.streamLowLightOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.streamLowLightOverlay rect {
+  fill: var(--overlay4);
+  pointer-events: none;
+}

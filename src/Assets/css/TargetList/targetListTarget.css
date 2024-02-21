@@ -1,0 +1,97 @@
+.targetListTarget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--surface2);
+  width: 100%;
+  border-radius: var(--border-radius-small);
+  border: none;
+}
+
+.targetListTarget.targetListTarget-selected {
+  background-color: var(--surface3);
+}
+
+.targetListTarget-button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius-small);
+  padding: 16px 8px;
+}
+
+.targetListTarget-buttonStreamImage {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius-small);
+  padding: 0px 8px 16px 8px;
+}
+
+.targetListTarget-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.targetListTarget-row-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: var(--font-size-xs);
+  font-family: "Saira-Bold";
+  gap: 8px;
+}
+
+.targetListTarget-row-content svg {
+  width: 16px;
+  height: 16px;
+}
+
+.targetListTarget-targetIcon svg path {
+  fill: var(--onSurface1);
+}
+
+.targetListTarget-directionIcon {
+  gap: 4px;
+}
+
+.targetListTarget-directionIcon svg:first-child {
+  width: 4px;
+  height: 4px;
+}
+
+.targetListTarget-directionIcon svg path {
+  fill: var(--onSurface2);
+}
+
+.targetListTarget-row-content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.targetListTarget-row-content-column p:first-child {
+  text-align: left;
+  font-size: var(--font-size-s);
+  color: var(--onSurface1);
+  font-family: "Saira-Regular";
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.targetListTarget-row-content-column-info {
+  color: var(--onSurface2);
+  font-size: var(--font-size-xs);
+  margin: 0;
+  text-align: left;
+}

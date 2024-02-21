@@ -1,0 +1,69 @@
+.menuButton2 {
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: var(--onSurface2);
+  min-width: 64px;
+  padding: 20px;
+  gap: 4px;
+}
+
+.menuButton2 > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.menuButton2 > svg path {
+  fill: var(--onSurface2);
+  fill: var(--onSurface2);
+}
+
+.menuButton2 p {
+  margin: 0;
+  font-size: var(--font-size-xs);
+}
+
+.menuButton2.active {
+  background-color: var(--surface2);
+  color: var(--onSurface1);
+}
+
+.menuButton2.active svg path {
+  fill: var(--primary2);
+  fill: var(--primary2);
+}
+
+/*alarm button*/
+.menuModes-alarm .menuButton2.active {
+  background-color: var(--primary);
+}
+.menuModes-alarm .menuButton2 svg path {
+  fill: var(--onSurface3);
+  fill: var(--onSurface3);
+}
+
+.menuModes-alarm .menuButton2 p {
+  color: var(--onSurface3);
+}
+
+.menuModes-alarm .menuButton2.active svg path {
+  fill: var(--white);
+  fill: var(--white);
+}
+
+.menuModes-alarm .menuButton2.active p {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (min-height: 1100px) and (orientation: portrait) {
+  .menuButton2 {
+    padding: 0px 24px;
+    height: 100%;
+    min-width: 80px;
+  }
+}

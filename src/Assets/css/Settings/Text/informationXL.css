@@ -1,0 +1,8 @@
+.informationXL {
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: "Saira-Regular";
+  height: 32px;
+  display: flex;
+  align-items: center;
+}

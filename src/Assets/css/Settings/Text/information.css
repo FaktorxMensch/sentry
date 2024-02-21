@@ -1,0 +1,6 @@
+.information {
+  font-size: var(--font-size-s);
+  color: var(--onSurface2);
+  font-family: "Saira-Regular";
+  text-transform: uppercase;
+}

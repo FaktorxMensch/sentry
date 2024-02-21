@@ -1,0 +1,73 @@
+.boatBusParameter {
+  grid-row: auto / span 3;
+  grid-column: auto / span 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.boatBusParameter:first-child {
+  grid-column: auto / span 2;
+}
+
+.boatBusParameter-name {
+  display: flex;
+  justify-content: left;
+}
+
+.boatBusParameter-name > p {
+  color: var(--onSurface2);
+  font-size: var(--font-size-xs);
+  font-family: "Saira-Regular";
+  text-transform: uppercase;
+}
+
+.boatBusParameter-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boatBusParameter-value > p {
+  color: var(--onSurface2);
+  font-size: var(--font-size-boatbus);
+  font-family: "Saira-Bold";
+}
+
+.boatBusParameter-unit {
+  display: flex;
+  justify-content: right;
+  text-transform: uppercase;
+}
+
+.boatBusParameter-unit > p {
+  color: var(--onSurface3);
+  font-size: var(--font-size-xs);
+  font-family: "Saira-Regular";
+}
+
+.boatBusParameter-value > p {
+  color: var(--onSurface2);
+  font-size: var(--font-size-xxxl);
+  font-family: "Saira-Bold";
+}
+
+.boatBusParameter-value.mediumFont > p {
+  font-size: var(--font-size-xxl);
+}
+
+.boatBusParameter-value.smallFont > p {
+  font-size: var(--font-size-xl);
+}
+
+@media only screen and (min-height: 1100px) and (orientation: portrait) {
+  .boatBusParameter {
+    grid-row: auto / span 1;
+    grid-column: auto / span 3;
+  }
+
+  .boatBusParameter:first-child {
+    grid-row: auto / span 2;
+    grid-column: auto / span 3;
+  }
+}

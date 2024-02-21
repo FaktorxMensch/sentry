@@ -1,0 +1,4 @@
+.rightOutOfBound path,
+.bottomOutOfBound path {
+  transform: translate(100%, 100%) rotate(180deg);
+}

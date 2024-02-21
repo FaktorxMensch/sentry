@@ -1,0 +1,45 @@
+.installation-maskButtonImage {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  margin-left: 4px;
+  float: left;
+}
+
+.installation-maskButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 16px 0px 12px;
+  gap: 8px;
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size-s);
+  font-family: "Saira-Medium";
+  transition: 0.4s;
+  background-color: var(--primary2);
+  color: var(--white);
+  text-decoration: none;
+  width: fit-content;
+  height: 48px;
+}
+
+.installation-maskButton svg path {
+  fill: var(--white);
+}
+
+.installation-maskButton.retry {
+  background-color: var(--onBG3);
+}
+
+.installation-boatBusSources {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.installation-dash {
+  width: 100%;
+  border: 0.5px solid var(--onBG1);
+}

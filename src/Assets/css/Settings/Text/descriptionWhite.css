@@ -1,0 +1,6 @@
+.description-white {
+  font-size: var(--font-size-s);
+  font-family: "Saira-Regular";
+  color: var(--white);
+  display: block;
+}

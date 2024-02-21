@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Saira-Bold";
+  src: local("Saira"),
+    url(./../fonts/SairaCondensed-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Saira-Medium";
+  src: local("Saira"),
+    url(./../fonts/SairaCondensed-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Saira-Regular";
+  src: local("Saira"),
+    url(./../fonts/SairaCondensed-Regular.ttf) format("truetype");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  font-family: "Saira-Medium";
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+p {
+  margin: 0px;
+  line-height: 100%;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 16px;
+}

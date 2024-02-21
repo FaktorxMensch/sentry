@@ -1,0 +1,47 @@
+.helpContentGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 24px;
+  background: var(--primary);
+  border-radius: var(--border-radius-small);
+  height: fit-content;
+}
+
+.helpContentGroup-title {
+  font-size: var(--font-size-l);
+  font-family: "Saira-Medium";
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.helpContentGroup-information {
+  font-size: var(--font-size-s);
+  color: var(--white);
+  font-family: "Saira-Regular";
+  text-transform: uppercase;
+}
+
+.helpContentGroup-image {
+  border-radius: 8px;
+  max-width: 150px;
+}
+
+.helpContentGroup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 12px;
+  color: var(--white);
+  background: none;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.helpContentGroup-button svg path {
+  fill: var(--white);
+}

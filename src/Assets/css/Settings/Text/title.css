@@ -1,0 +1,6 @@
+.title {
+  font-size: var(--font-size-l);
+  font-family: "Saira-Regular";
+  color: var(--onSurface2);
+  text-transform: uppercase;
+}

@@ -1,0 +1,63 @@
+.instruments {
+  grid-column: 7 / span 3;
+  grid-row: 8 / span 4;
+  background-color: var(--surface1);
+  border-radius: var(--border-radius-default);
+  display: none;
+  overflow: hidden;
+  grid-gap: 16px;
+  padding: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  box-sizing: border-box;
+}
+
+/*it's a secondary panel so only appears on the large breakpoint*/
+/*large landscape and large portrait breakpoint*/
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (min-height: 1100px) and (orientation: portrait) {
+  .instruments {
+    display: grid;
+    grid-column: 7 / span 3;
+  }
+
+  .instruments.withControlsMenu {
+    grid-column: 6 / span 3;
+  }
+
+  .instruments.withSettingsMenu {
+    grid-column: 4 / span 3;
+  }
+
+  .instruments.withControlsMenu.hideBoatbus {
+    display: none;
+  }
+
+  .instruments.withSettingsMenu.hideBoatbus {
+    display: none;
+  }
+
+  .instruments.hideBoatbus {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (orientation: landscape) {
+  .instruments {
+    grid-row: 9 / span 3;
+  }
+
+  .instruments.hideBoatbus {
+    display: none;
+  }
+}
+
+@media only screen and (min-height: 1100px) and (orientation: portrait) {
+  .instruments {
+    grid-row: 8 / span 4;
+  }
+
+  .instruments.hideBoatbus {
+    display: none;
+  }
+}

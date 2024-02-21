@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgCamera(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.71818 4C9.4075 4 9.11878 4.16024 8.95443 4.42389L7.76413 6.33333H5.35455C4.70984 6.33333 4.10483 6.60778 3.66864 7.07425C3.23438 7.53868 3 8.15641 3 8.78889V17.3444C3 17.9769 3.23438 18.5947 3.66864 19.0591C4.10482 19.5256 4.70984 19.8 5.35455 19.8H18.4455C19.0902 19.8 19.6952 19.5256 20.1314 19.0591C20.5656 18.5947 20.8 17.9769 20.8 17.3444V8.78889C20.8 8.1564 20.5656 7.53868 20.1314 7.07425C19.6952 6.60778 19.0902 6.33333 18.4455 6.33333H16.0359L14.8456 4.42389C14.6812 4.16024 14.3925 4 14.0818 4H9.71818ZM9.02739 7.70944L10.2177 5.8H13.5823L14.7726 7.70944C14.937 7.97309 15.2257 8.13333 15.5364 8.13333H18.4455C18.5723 8.13333 18.7072 8.18666 18.8166 8.30364C18.9279 8.42266 19 8.59626 19 8.78889V17.3444C19 17.5371 18.9279 17.7107 18.8166 17.8297C18.7072 17.9467 18.5723 18 18.4455 18H5.35455C5.22771 18 5.09279 17.9467 4.98341 17.8297C4.87212 17.7107 4.8 17.5371 4.8 17.3444V8.78889C4.8 8.59625 4.87212 8.42266 4.98341 8.30364C5.09279 8.18666 5.22771 8.13333 5.35455 8.13333H8.26364C8.57432 8.13333 8.86304 7.97309 9.02739 7.70944ZM9.8 12.9C9.8 11.7402 10.7402 10.8 11.9 10.8C13.0598 10.8 14 11.7402 14 12.9C14 14.0598 13.0598 15 11.9 15C10.7402 15 9.8 14.0598 9.8 12.9ZM11.9 9C9.74609 9 8 10.7461 8 12.9C8 15.0539 9.74609 16.8 11.9 16.8C14.0539 16.8 15.8 15.0539 15.8 12.9C15.8 10.7461 14.0539 9 11.9 9Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgCamera);
+export default __webpack_public_path__ + "static/media/camera.4bffcc58220045e17c6d9f0f9c21e1a3.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,28 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgFullscreen(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M4.5 7.6C4.5 7.03995 4.5 6.75992 4.60899 6.54601C4.70487 6.35785 4.85785 6.20487 5.04601 6.10899C5.25992 6 5.53995 6 6.1 6H17.9C18.4601 6 18.7401 6 18.954 6.10899C19.1422 6.20487 19.2951 6.35785 19.391 6.54601C19.5 6.75992 19.5 7.03995 19.5 7.6V16.4C19.5 16.9601 19.5 17.2401 19.391 17.454C19.2951 17.6422 19.1422 17.7951 18.954 17.891C18.7401 18 18.4601 18 17.9 18H6.1C5.53995 18 5.25992 18 5.04601 17.891C4.85785 17.7951 4.70487 17.6422 4.60899 17.454C4.5 17.2401 4.5 16.9601 4.5 16.4V7.6Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgFullscreen);
+export default __webpack_public_path__ + "static/media/fullscreen.53f7ab00796818d480be091d0f149144.svg";
+export { ForwardRef as ReactComponent };

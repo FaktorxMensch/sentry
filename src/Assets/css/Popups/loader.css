@@ -1,0 +1,49 @@
+.loader {
+  width: 80px;
+  height: 80px;
+  margin: 16px;
+  border-radius: 50%;
+  border: solid 15px;
+  border-color: var(--primary) black black;
+  position: relative;
+  animation-name: stagger;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.loader-left,
+.loader-right {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--primary);
+  position: absolute;
+  left: 15px;
+}
+
+.loader-left {
+  left: 0px;
+  top: -2px;
+}
+
+.loader-right {
+  left: 65px;
+  top: -2px;
+}
+
+@keyframes stagger {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

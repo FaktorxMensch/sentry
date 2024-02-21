@@ -1,0 +1,19 @@
+.targetListTrackButton {
+  color: var(--onBG1);
+  background-color: var(--primary);
+  border: none;
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size-xs);
+  font-family: "Saira-Medium";
+  padding: 8px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fill-available;
+  gap: 8px;
+}
+
+.targetListTrackButton.active {
+  background-color: var(--danger);
+}

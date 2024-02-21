@@ -1,0 +1,147 @@
+:root {
+  --color-black: rgba(0, 0, 0, 1);
+
+  /* dark mode 2.0 */
+  --color-dark-mode-accent: rgba(0, 80, 150, 1);
+  --color-dark-mode-accent-2: rgba(0, 120, 190, 1);
+  --color-dark-mode-warning: rgba(215, 170, 40, 1);
+  --color-dark-mode-danger: rgba(190, 40, 40, 1);
+  --color-dark-mode-success: rgba(60, 140, 60, 1);
+  /* background */
+  --color-dark-mode-background: rgba(25, 26, 26, 1);
+  --color-dark-mode-on-background-1: rgba(151, 153, 155, 1);
+  --color-dark-mode-on-background-2: rgba(100, 102, 104, 1);
+  --color-dark-mode-on-background-3: rgba(50, 51, 52, 1);
+  /* surface */
+  --color-dark-mode-surface-1: rgba(30, 31, 31, 1);
+  --color-dark-mode-surface-2: rgba(40, 41, 42, 1);
+  --color-dark-mode-surface-3: rgba(50, 51, 52, 1);
+  --color-dark-mode-on-surface-1: rgba(177, 179, 181, 1);
+  --color-dark-mode-on-surface-2: rgba(125, 128, 130, 1);
+  --color-dark-mode-on-surface-3: rgba(75, 77, 78, 1);
+  /* overlight */
+  --color-dark-mode-overlight-1: rgba(255, 255, 255, 0.05);
+  --color-dark-mode-overlight-2: rgba(255, 255, 255, 0.1);
+  --color-dark-mode-overlight-3: rgba(255, 255, 255, 0.3);
+  --color-dark-mode-overlight-4: rgba(255, 255, 255, 0.6);
+  --color-dark-mode-overlight-5: rgba(255, 255, 255, 0.9);
+  /* overlay */
+  --color-dark-mode-overlay-1: rgba(0, 0, 0, 0.1);
+  --color-dark-mode-overlay-2: rgba(0, 0, 0, 0.2);
+  --color-dark-mode-overlay-3: rgba(0, 0, 0, 0.4);
+  --color-dark-mode-overlay-4: rgba(0, 0, 0, 0.6);
+  --color-dark-mode-overlay-5: rgba(0, 0, 0, 0.8);
+  /* white */
+  --color-dark-mode-white: rgba(255, 255, 255, 1);
+
+  /* low light mode 2.0 */
+  --color-low-light-mode-accent: rgba(0, 50, 100, 1);
+  --color-low-light-mode-accent-2: rgba(0, 80, 150, 1);
+  --color-low-light-mode-warning: rgba(195, 150, 20, 1);
+  --color-low-light-mode-danger: rgba(170, 20, 20, 1);
+  --color-low-light-mode-success: rgba(20, 100, 20, 1);
+  /* background */
+  --color-low-light-mode-background: rgba(0, 0, 0, 1);
+  --color-low-light-mode-on-background-1: rgba(125, 128, 130, 1);
+  --color-low-light-mode-on-background-2: rgba(75, 77, 78, 1);
+  --color-low-light-mode-on-background-3: rgba(25, 26, 26, 1);
+  /* surface */
+  --color-low-light-mode-surface-1: rgba(10, 10, 10, 1);
+  --color-low-light-mode-surface-2: rgba(15, 15, 16, 1);
+  --color-low-light-mode-surface-3: rgba(20, 20, 21, 1);
+  --color-low-light-mode-on-surface-3: rgba(50, 51, 52, 1);
+  --color-low-light-mode-on-surface-2: rgba(75, 77, 78, 1);
+  --color-low-light-mode-on-surface-1: rgba(100, 102, 104, 1);
+  /* overlay */
+  --color-low-light-mode-overlay-5: rgba(0, 0, 0, 0.6);
+  --color-low-light-mode-overlay-4: rgba(0, 0, 0, 0.6);
+  --color-low-light-mode-overlay-3: rgba(0, 0, 0, 0.4);
+  --color-low-light-mode-overlay-2: rgba(0, 0, 0, 0.2);
+  --color-low-light-mode-overlay-1: rgba(0, 0, 0, 0.1);
+  /* overlight */
+  --color-low-light-mode-overlight-1: rgba(255, 255, 255, 0.05);
+  --color-low-light-mode-overlight-2: rgba(255, 255, 255, 0.1);
+  --color-low-light-mode-overlight-3: rgba(255, 255, 255, 0.15);
+  --color-low-light-mode-overlight-4: rgba(255, 255, 255, 0.2);
+  --color-low-light-mode-overlight-5: rgba(255, 255, 255, 0.3);
+  /* white */
+  --color-low-light-mode-white: rgba(255, 255, 255, 0.7);
+
+  /* foundation colours 2.0 */
+  /* primary */
+  --color-foundation-primary-900: rgba(0, 50, 100, 1);
+  --color-foundation-primary-800: rgba(0, 60, 120, 1);
+  --color-foundation-primary-700: rgba(0, 80, 150, 1);
+  --color-foundation-primary-600: rgba(0, 100, 170, 1);
+  --color-foundation-primary-500: rgba(0, 120, 190, 1);
+  --color-foundation-primary-400: rgba(20, 150, 220, 1);
+  --color-foundation-primary-300: rgba(40, 170, 230, 1);
+  --color-foundation-primary-200: rgba(80, 190, 240, 1);
+  --color-foundation-primary-100: rgba(100, 200, 250, 1);
+  /* success */
+  --color-foundation-success-900: rgba(0, 80, 0, 1);
+  --color-foundation-success-800: rgba(20, 100, 20, 1);
+  --color-foundation-success-700: rgba(40, 120, 40, 1);
+  --color-foundation-success-600: rgba(60, 140, 60, 1);
+  --color-foundation-success-500: rgba(80, 160, 80, 1);
+  --color-foundation-success-400: rgba(100, 180, 100, 1);
+  --color-foundation-success-300: rgba(120, 200, 120, 1);
+  --color-foundation-success-200: rgba(140, 220, 140, 1);
+  --color-foundation-success-100: rgba(160, 240, 160, 1);
+  /* danger */
+  --color-foundation-danger-900: rgba(170, 20, 20, 1);
+  --color-foundation-danger-800: rgba(180, 30, 30, 1);
+  --color-foundation-danger-700: rgba(190, 40, 40, 1);
+  --color-foundation-danger-600: rgba(200, 50, 50, 1);
+  --color-foundation-danger-500: rgba(210, 60, 60, 1);
+  --color-foundation-danger-400: rgba(220, 80, 80, 1);
+  --color-foundation-danger-300: rgba(230, 100, 100, 1);
+  --color-foundation-danger-100: rgba(250, 140, 140, 1);
+  /* warning */
+  --color-foundation-warning-900: rgba(195, 150, 20, 1);
+  --color-foundation-warning-800: rgba(205, 160, 30, 1);
+  --color-foundation-warning-700: rgba(215, 170, 40, 1);
+  --color-foundation-warning-600: rgba(225, 180, 50, 1);
+  --color-foundation-warning-500: rgba(235, 190, 60, 1);
+  --color-foundation-warning-400: rgba(240, 200, 70, 1);
+  --color-foundation-warning-300: rgba(245, 210, 80, 1);
+  --color-foundation-warning-200: rgba(250, 220, 90, 1);
+  /* terrain */
+  --color-foundation-terrain-900: rgba(90, 88, 84, 1);
+  --color-foundation-terrain-800: rgba(110, 108, 104, 1);
+  --color-foundation-terrain-700: rgba(130, 128, 124, 1);
+  --color-foundation-terrain-600: rgba(150, 148, 144, 1);
+  --color-foundation-terrain-500: rgba(170, 168, 164, 1);
+  --color-foundation-terrain-400: rgba(190, 188, 184, 1);
+  --color-foundation-terrain-300: rgba(210, 208, 204, 1);
+  --color-foundation-terrain-200: rgba(230, 228, 224, 1);
+  --color-foundation-terrain-100: rgba(250, 248, 244, 1);
+  /* neutrals */
+  --color-foundation-neutrals-900: rgba(25, 26, 26, 1);
+  --color-foundation-neutrals-800: rgba(50, 51, 52, 1);
+  --color-foundation-neutrals-700: rgba(75, 77, 78, 1);
+  --color-foundation-neutrals-600: rgba(100, 102, 104, 1);
+  --color-foundation-neutrals-500: rgba(125, 128, 130, 1);
+  --color-foundation-neutrals-400: rgba(151, 153, 155, 1);
+  --color-foundation-neutrals-300: rgba(177, 179, 181, 1);
+  --color-foundation-neutrals-200: rgba(203, 204, 205, 1);
+  --color-foundation-neutrals-100: rgba(230, 230, 230, 1);
+  /* dark neutrals */
+  --color-foundation-neutrals-dark-980: rgba(5, 5, 5, 1);
+  --color-foundation-neutrals-dark-960: rgba(10, 10, 10, 1);
+  --color-foundation-neutrals-dark-940: rgba(15, 15, 16, 1);
+  --color-foundation-neutrals-dark-920: rgba(20, 20, 21, 1);
+  --color-foundation-neutrals-dark-880: rgba(30, 31, 31, 1);
+  --color-foundation-neutrals-dark-860: rgba(35, 36, 36, 1);
+  --color-foundation-neutrals-dark-840: rgba(40, 41, 42, 1);
+  --color-foundation-neutrals-dark-820: rgba(45, 46, 47, 1);
+  /* light neutrals */
+  --color-foundation-neutrals-light-180: rgba(209, 210, 211, 1);
+  --color-foundation-neutrals-light-160: rgba(214, 215, 216, 1);
+  --color-foundation-neutrals-light-140: rgba(219, 220, 221, 1);
+  --color-foundation-neutrals-light-120: rgba(224, 225, 226, 1);
+  --color-foundation-neutrals-light-80: rgba(235, 235, 235, 1);
+  --color-foundation-neutrals-light-60: rgba(239, 240, 240, 1);
+  --color-foundation-neutrals-light-40: rgba(245, 245, 245, 1);
+  --color-foundation-neutrals-light-20: rgba(250, 250, 250, 1);
+}

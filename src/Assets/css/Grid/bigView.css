@@ -1,0 +1,122 @@
+.bigView {
+  position: relative;
+  overflow: hidden;
+  grid-column: 1 / span 8;
+  grid-row: 1 / span 12;
+  border-radius: var(--border-radius-default);
+  background-color: var(--surface1);
+}
+
+.bigView.primary {
+  display: block;
+}
+
+@media only screen and (orientation: landscape) {
+  .bigView.fullscreen {
+    grid-column: 1 / 9;
+    grid-row: 1 / span 12;
+  }
+
+  .bigView.withTargetList {
+    grid-column: 2 / span 7;
+  }
+
+  .bigView.withControlsMenu {
+    grid-column: 1 / span 7;
+  }
+}
+
+/*small portrait breakpoint*/
+@media only screen and (orientation: portrait) {
+  .bigView,
+  .bigView.fullscreen {
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 11;
+  }
+
+  .bigView.fullscreen.withControlsMenu,
+  .bigView.withControlsMenu {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 11;
+  }
+
+  .bigView.fullscreen.withTargetList,
+  .bigView.withTargetList {
+    grid-column: 2 / span 8;
+    grid-row: 1 / span 11;
+  }
+
+  .bigView.fullscreen.withSettingsMenu,
+  .bigView.withSettingsMenu {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 11;
+  }
+}
+
+/*large landscape breakpoint*/
+@media only screen and (min-width: 1100px) and (orientation: landscape) {
+  .bigView {
+    display: block;
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 11;
+  }
+
+  .bigView.withTargetList {
+    grid-column: 2 / span 5;
+  }
+
+  .bigView.withControlsMenu {
+    grid-column: 1 / span 5;
+  }
+
+  .bigView.withSettingsMenu {
+    grid-column: 1 / span 3;
+  }
+
+  .bigView.fullscreen {
+    display: block;
+    grid-column: 1 / 10;
+    grid-row: 1 / span 11;
+  }
+
+  .bigView.fullscreen.withTargetList {
+    grid-column: 2 / 10;
+  }
+
+  .bigView.fullscreen.withControlsMenu {
+    grid-column: 1 / 9;
+  }
+
+  .bigView.fullscreen.withSettingsMenu {
+    grid-column: 1 / 7;
+  }
+}
+
+/*large portrait breakpoint*/
+@media only screen and (min-height: 1100px) and (orientation: portrait) {
+  .bigView,
+  .bigView.withControlsMenu,
+  .bigView.withSettingsMenu {
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 7;
+  }
+
+  .bigView.withControlsMenu {
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 7;
+  }
+
+  .bigView.withTargetList {
+    grid-column: 2 / span 8;
+    grid-row: 1 / span 7;
+  }
+
+  .bigView.fullscreen.withTargetList {
+    grid-column: 2 / span 8;
+    grid-row: 1 / span 11;
+  }
+
+  .bigView.fullscreen.withControlsMenu {
+    grid-column: 1 / span 8;
+  }
+}

@@ -1,0 +1,137 @@
+.initialLoader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--onBG1);
+  white-space: pre-line;
+  text-align: center;
+}
+
+.initialLoader-iconDiv {
+  margin: 64px 0px;
+}
+
+.initialLoader-connectionBusy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 40%;
+}
+
+.initialLoader-connectionBusy-header {
+  margin: 24px 0px;
+}
+
+.initialLoader-connectionBusy-title {
+  margin-bottom: 16px;
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  font-family: "Saira-Regular";
+}
+
+.initialLoader-connectionBusy-subtitle {
+  font-size: var(--font-size-s);
+  color: var(--white);
+  font-family: "Saira-Regular";
+}
+
+.initialLoader-seaaiIcon {
+  width: 96px;
+  height: 96px;
+}
+
+.initialLoader-seaaiIcon path {
+  fill: var(--white);
+}
+
+.initialLoader-errorIcon {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 24px;
+}
+
+.initialLoader-errorIcon > path {
+  fill: var(--danger);
+}
+
+.initialLoader-connectionBusy-device {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  gap: 24px;
+  background: var(--surface1);
+  border-radius: 16px;
+  width: 100%;
+  height: 80px;
+  text-transform: uppercase;
+  font-size: var(--font-size-l);
+  color: var(--onSurface1);
+}
+
+.initialLoader-connectionBusy-device > div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.initialLoader-refreshButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 0 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--primary2);
+  color: var(--white);
+  gap: 8px;
+  height: 48px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.initialLoader-connectionBusy-device-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0px 16px 0 12px;
+  gap: 8px;
+  background: var(--primary2);
+  color: var(--white);
+  border-radius: 8px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.initialLoader-connectionBusy-device > p {
+  text-transform: uppercase;
+}
+
+.initialLoader-connectionBusy-device-grey {
+  color: var(--onSurface2);
+  text-transform: uppercase;
+  font-size: var(--font-size-l);
+}
+
+.initialLoader-connectionBusy-device-title {
+  font-size: var(--font-size-xl);
+}
+
+.initialLoader-connectionFailed-title {
+  font-size: var(--font-size-xl);
+  color: var(--white);
+  margin-bottom: 16px;
+}

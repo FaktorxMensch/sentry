@@ -1,0 +1,11 @@
+.menuViewZoomDisplay {
+  width: 40px;
+  height: 40px;
+  background-color: var(--surface3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  font-size: var(--font-size-s);
+  color: var(--onSurface1);
+}

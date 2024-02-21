@@ -1,0 +1,7 @@
+.settingsLine {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 16px;
+}

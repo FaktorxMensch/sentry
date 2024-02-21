@@ -1,0 +1,69 @@
+.page {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.grid {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr) max-content;
+  grid-template-rows: repeat(12, 1fr);
+  padding: 8px;
+  gap: 8px;
+}
+
+.grid.withDeveloperMode {
+  border: 2px solid var(--danger);
+}
+
+.grid.withInstallerMode {
+  border: 2px solid var(--success);
+}
+
+/*small and medium breakpoint border-radious*/
+.grid .grid-element {
+  border-radius: var(--border-radius-small);
+}
+
+.grid .sidePanel {
+  min-width: 192px;
+}
+
+/*medium breakpoint paddings and gaps*/
+@media only screen and (orientation: landscape),
+  only screen and (orientation: portrait) {
+  .grid {
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+/*grid with horizontal menu on the bottom for large landscape amd for small medium and large portrait*/
+@media only screen and (orientation: portrait),
+  only screen and (min-width: 1100px) and (orientation: landscape) {
+  .grid {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 1fr) max-content;
+  }
+}
+
+/*large breakpoint paddings and gaps*/
+@media only screen and (min-width: 1100px) and (orientation: landscape),
+  only screen and (min-height: 1100px) and (orientation: portrait) {
+  .grid {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  /*secondary panels only appear in the large breakpoint*/
+  .grid .secondary {
+    display: block !important;
+  }
+
+  .grid-element {
+    border-radius: var(--border-radius-default) !important;
+  }
+}

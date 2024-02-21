@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgBell(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12.1997 4.09961C10.8648 4.09961 9.58461 4.62988 8.64072 5.57378C7.69682 6.51767 7.16655 7.79787 7.16655 9.13274C7.16655 11.4111 6.67955 12.8098 6.24316 13.6099C6.02372 14.0122 5.81213 14.2723 5.66953 14.4228C5.59799 14.4984 5.54319 14.5469 5.51262 14.5724C5.4992 14.5836 5.49042 14.5903 5.48692 14.593C5.16667 14.8151 5.02529 15.219 5.1386 15.5932C5.25353 15.9728 5.60338 16.2324 5.99998 16.2324H18.3994C18.796 16.2324 19.1458 15.9728 19.2608 15.5932C19.3741 15.219 19.2327 14.8151 18.9124 14.593C18.9089 14.5903 18.9002 14.5836 18.8867 14.5724C18.8562 14.5469 18.8014 14.4984 18.7298 14.4228C18.5872 14.2723 18.3756 14.0122 18.1562 13.6099C17.7198 12.8098 17.2328 11.4111 17.2328 9.13274C17.2328 7.79787 16.7025 6.51767 15.7586 5.57378C14.8147 4.62988 13.5345 4.09961 12.1997 4.09961ZM15.4328 9.13274C15.4328 11.646 15.9661 13.3368 16.5547 14.4324H7.84468C8.43321 13.3368 8.96655 11.646 8.96655 9.13274C8.96655 8.27526 9.30718 7.4529 9.91351 6.84657C10.5198 6.24024 11.3422 5.89961 12.1997 5.89961C13.0572 5.89961 13.8795 6.24024 14.4858 6.84657C15.0922 7.4529 15.4328 8.27526 15.4328 9.13274ZM11.7865 17.6359C11.5371 17.206 10.9863 17.0596 10.5564 17.309C10.1264 17.5584 9.98007 18.1091 10.2295 18.5391C10.4297 18.8843 10.7171 19.1708 11.0629 19.3699C11.4086 19.5691 11.8007 19.6739 12.1997 19.6739C12.5987 19.6739 12.9908 19.5691 13.3365 19.3699C13.6823 19.1708 13.9697 18.8843 14.1699 18.5391C14.4193 18.1091 14.273 17.5584 13.843 17.309C13.4131 17.0596 12.8623 17.206 12.6129 17.6359C12.5709 17.7083 12.5106 17.7684 12.4381 17.8102C12.3656 17.8519 12.2834 17.8739 12.1997 17.8739C12.116 17.8739 12.0338 17.8519 11.9613 17.8102C11.8887 17.7684 11.8285 17.7083 11.7865 17.6359Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgBell);
+export default __webpack_public_path__ + "static/media/bell.0422c64ff41f1f5a358a66130bea03bc.svg";
+export { ForwardRef as ReactComponent };

@@ -1,0 +1,21 @@
+export const DISTANCE_METRICS = {
+  METERS: "METERS",
+  FEET: "FEET",
+  NM: "NAUTICAL_MILES",
+};
+
+export const TEMPERATURE_METRICS = {
+  CELSIUS: "CELSIUS",
+  FAHRENHEIT: "FAHRENHEIT",
+};
+
+export const SPEED_METRICS = {
+  M_S: "METERS_PER_SECOND",
+  KM_H: "KILOMETERS_PER_HOUR",
+  KNOTS: "KNOTS",
+};
+
+export const ANGLE_METRICS = {
+  RAD: "RADIANT",
+  DEGREE: "DEGREES",
+};

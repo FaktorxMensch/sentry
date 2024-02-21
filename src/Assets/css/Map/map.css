@@ -1,0 +1,3 @@
+.map-sourceBoat svg path:first-child {
+  fill: var(--onSurface1);
+}

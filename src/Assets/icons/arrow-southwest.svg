@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgArrowSouthwest(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.92961 15.3423L14.8286 15.3423C15.3257 15.3423 15.7286 15.7453 15.7286 16.2423C15.7286 16.7394 15.3257 17.1423 14.8286 17.1423L7.75753 17.1423C7.51884 17.1423 7.28992 17.0475 7.12114 16.8787C7.06765 16.8252 7.02159 16.7657 6.98363 16.7018C6.897 16.5563 6.85497 16.3917 6.85753 16.2276L6.85753 9.17126C6.85753 8.6742 7.26048 8.27126 7.75753 8.27126C8.25459 8.27126 8.65753 8.6742 8.65753 9.17126L8.65753 14.0688L15.6063 7.12005C15.9578 6.76858 16.5276 6.76858 16.8791 7.12005C17.2306 7.47152 17.2306 8.04137 16.8791 8.39284L9.92961 15.3423Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgArrowSouthwest);
+export default __webpack_public_path__ + "static/media/arrow-southwest.1258bc421609b6bd3ddab445924172b0.svg";
+export { ForwardRef as ReactComponent };

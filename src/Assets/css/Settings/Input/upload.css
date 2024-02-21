@@ -1,0 +1,72 @@
+.upload {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.upload-form {
+  position: relative;
+  width: -webkit-fill-available;
+  overflow: hidden;
+}
+
+.upload-form input[type="file"] {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.upload-form label {
+  width: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0px 16px;
+  gap: 16px;
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size-s);
+  font-family: "Saira-Medium";
+  text-overflow: ellipsis;
+  text-indent: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--overlay2);
+  color: var(--onSurface2);
+  height: 48px;
+  align-items: center;
+}
+
+.upload-button {
+  cursor: pointer;
+  padding: 0px 16px 0px 12px;
+  border-radius: var(--border-radius-small);
+  text-align: center;
+  font-size: var(--font-size-s);
+  font-family: "Saira-Medium";
+  align-self: right;
+  transition: 0.4s;
+  background-color: var(--primary2);
+  color: var(--white);
+  text-decoration: none;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+}
+
+.upload-button svg path {
+  fill: var(--white);
+}
+
+.upload-button.disabled {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.3;
+  transition: 0.4s;
+}

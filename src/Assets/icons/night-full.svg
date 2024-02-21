@@ -1,0 +1,30 @@
+var _path;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgNightFull(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12.0459 3.55775C12.2201 3.86679 12.1965 4.24932 11.9856 4.53459C11.2281 5.55938 10.8636 6.82202 10.9584 8.09285C11.0532 9.36367 11.6009 10.5583 12.502 11.4594C13.4031 12.3605 14.5977 12.9082 15.8686 13.003C17.1394 13.0978 18.402 12.7333 19.4268 11.9758C19.7121 11.7649 20.0946 11.7413 20.4037 11.9155C20.7127 12.0897 20.8906 12.4291 20.858 12.7824C20.7025 14.4652 20.0709 16.069 19.0371 17.4061C18.0034 18.7431 16.6102 19.7581 15.0207 20.3322C13.4311 20.9064 11.7109 21.016 10.0614 20.6482C8.41184 20.2804 6.90116 19.4504 5.7061 18.2553C4.51105 17.0603 3.68106 15.5496 3.31325 13.9C2.94544 12.2505 3.05502 10.5303 3.62918 8.94074C4.20333 7.3512 5.21831 5.95805 6.55534 4.9243C7.89238 3.89055 9.49617 3.25896 11.1791 3.10344C11.5323 3.0708 11.8718 3.2487 12.0459 3.55775ZM9.56024 5.29739C8.87876 5.54659 8.23611 5.90005 7.65634 6.34831C6.58978 7.17293 5.78013 8.28426 5.32212 9.55225C4.86412 10.8202 4.7767 12.1924 5.07011 13.5083C5.36351 14.8241 6.0256 16.0292 6.9789 16.9825C7.9322 17.9358 9.13727 18.5979 10.4531 18.8913C11.769 19.1847 13.1412 19.0973 14.4092 18.6393C15.6772 18.1813 16.7885 17.3716 17.6131 16.3051C18.0614 15.7253 18.4148 15.0827 18.664 14.4012C17.7332 14.7344 16.7358 14.8727 15.7347 14.798C14.0339 14.6712 12.4352 13.9381 11.2292 12.7322C10.0233 11.5262 9.29022 9.92747 9.16339 8.2267C9.08873 7.22557 9.22705 6.22824 9.56024 5.29739Z",
+    fill: "white"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgNightFull);
+export default __webpack_public_path__ + "static/media/night-full.1edca06c7ae315ac40656fc3b0152c03.svg";
+export { ForwardRef as ReactComponent };

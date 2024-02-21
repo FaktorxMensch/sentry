@@ -1,0 +1,65 @@
+.menuViewButton {
+  width: 40px;
+  height: 40px;
+  background-color: var(--surface2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
+
+.menuViewButton.active {
+  background-color: var(--surface3);
+  opacity: 100%;
+}
+
+.menuViewButton.active svg path,
+.menuViewButton.active svg rect {
+  fill: var(--onSurface1);
+}
+
+/*bottom left*/
+.menuViewButton:is(:first-of-type:last-of-type):not(.controlPanelOpen) {
+  border-radius: var(--border-radius-viewButton);
+}
+
+.menuViewButton:first-of-type {
+  border-radius: var(--border-radius-viewButton) 0px 0px
+    var(--border-radius-viewButton);
+}
+
+.menuViewButton:last-of-type {
+  border-radius: 0px var(--border-radius-viewButton)
+    var(--border-radius-viewButton) 0px;
+}
+
+.menuViewButton:hover {
+  opacity: 100%;
+}
+
+.menuViewButton > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.menuViewButton > svg path {
+  fill: var(--onSurface2);
+}
+
+.menuViewButton.menuViewButtonZoom:first-of-type {
+  border-radius: var(--border-radius-viewButton) var(--border-radius-viewButton)
+    0px 0px;
+}
+.menuViewButton.menuViewButtonZoom:last-of-type {
+  border-radius: 0px 0px var(--border-radius-viewButton)
+    var(--border-radius-viewButton);
+}
+
+.menuViewButton.buttonDisable {
+  display: none;
+}
+
+.menuViewButton.controlPanelOpen {
+  border-radius: 0px 0px var(--border-radius-viewButton)
+    var(--border-radius-viewButton);
+}
